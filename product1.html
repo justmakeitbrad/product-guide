@@ -16,6 +16,7 @@
 
     <div id="product1" class="productDisplay"></div>
     
+    <br>
     
     <table>
         <th colspan="2">- Cylinder Type -</th>
@@ -23,7 +24,7 @@
     <table>
         <tr>
             <button id="KW1">KW1</button>
-            <button id="SCL">SCL</button>
+            <button id="SCL" onclick="myFunction()">SCL</button>
         </tr>
     </table>
 
@@ -36,9 +37,9 @@
     </table>
     <table>
         <tr>
-            <button>11P</button>
-            <button>15</button>
-            <button>FBL</button>
+            <button onclick="finishSelector11P()">11P</button>
+            <button onclick="finishSelector15()">15</button>
+            <button onclick="finishSelectorFBL()">FBL</button>
         </tr>
     </table>
 
@@ -65,9 +66,10 @@
         </tr>
     </table>
 
+    <br>
 
-    <div id="code">
-        <p>AR101</p>
+    <div id="codeBox">
+        <p id="myDIV">AR101</p>
     </div>
     <script src="scripts.js"></script>
 
