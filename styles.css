@@ -6,7 +6,7 @@
     position: relative;
     border: 2px solid black;
     width: 300px;
-    height: 300px;
+    height: 174.500px;
 }
 
 #codeBox {
@@ -17,4 +17,18 @@
     width: auto;
     height: 30px;
     padding: 6px 6px 20px 6px;
+}
+
+#query {
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#productImage {
+    width: 300px;
+    height: 174.500px;
 }

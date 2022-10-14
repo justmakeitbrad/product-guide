@@ -7,19 +7,65 @@
     <title>Document</title>
 </head>
 <body>
-    
-<div id="SCL">Didn't Work :/</div>
+
+    <p><input type="text" id="codeToCheck"></p>
+    <button onclick="codeChecker">Try it</button>
+
+    <br>
+    <br>
+
+    <div id="demo"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <div><h1 id="productName"></h1></div>
+    <div><h2 id="productCode"></h2></div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="cuu">AR101 15 SCL</div>
 
     <script>
-        var x = document.getElementById("SCL");
-        var search = x.search(SCL)
+        let x = prompt(`What Product Are We Looking For?`);
+        const y = document.getElementById(`cuu`);
+        let search = x.search("AR");
 
-        if (search = true) {
-        x.innerHTML = "Good Job!"
-        }else {
-            x.innerHTML = "Bad Job!"
+
+        document.write(x);
+        document.write("  ...  ");
+        document.write(y);
+        document.write("  ...  ");
+        document.write(search);
+        
+        if (search == -1){
+            document.write(`Epic fail buddy :/`)
+        } else if (search == 0){
+            document.write(`Good on you :O You've made it work`)
+        } else {
+            document.write(`What a fuck up kid.`)
         }
         
     </script>
+
+
+    <!--
+    <div id="SCL">AR101 SCL</div>
+
+    <script>
+        var x = document.getElementById("SCL");                  Makes "x" the same as code box
+        var search = x.search("SCL")                             Checks for "SCL" inside x
+
+        if (search > 0 ) {                                       .search gives -1 if not found
+        x.innerHTML = "Good Job!"                                if else code here
+        }else {
+            x.innerHTML = "Bad Job!"
+        document.getElementById("SCL").innerHTML = position;
+        }
+    </script>
+    -->
 </body>
 </html>
